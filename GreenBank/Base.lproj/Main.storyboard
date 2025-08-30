@@ -19,37 +19,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZn-Oo-GfC">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiY-4d-jbh">
-                                        <rect key="frame" x="17" y="248" width="358" height="355"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="PHr-UK-jYY">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="355"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </view>
-                                        <blurEffect style="regular"/>
-                                    </visualEffectView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cCX-Fh-v9U">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                     </imageView>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-nF-bFz">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3F4-Fl-ucY">
                                         <rect key="frame" x="20" y="470" width="353" height="350"/>
-                                        <color key="backgroundColor" red="0.11764705882352941" green="0.090196078431372548" blue="0.30196078431372547" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.12156862745098039" green="0.090196078431372548" blue="0.31372549019607843" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="gUl-nF-bFz" firstAttribute="top" secondItem="FZn-Oo-GfC" secondAttribute="top" constant="470" id="ErD-cI-It8"/>
-                                    <constraint firstItem="gUl-nF-bFz" firstAttribute="leading" secondItem="FZn-Oo-GfC" secondAttribute="leading" constant="20" id="F6G-SL-9z5"/>
+                                    <constraint firstAttribute="trailing" secondItem="3F4-Fl-ucY" secondAttribute="trailing" constant="20" symbolic="YES" id="4Vb-Kp-cLN"/>
+                                    <constraint firstItem="3F4-Fl-ucY" firstAttribute="leading" secondItem="FZn-Oo-GfC" secondAttribute="leading" constant="20" symbolic="YES" id="BOJ-bk-D5V"/>
                                     <constraint firstItem="cCX-Fh-v9U" firstAttribute="leading" secondItem="FZn-Oo-GfC" secondAttribute="leading" id="Ki0-jT-Q9F"/>
                                     <constraint firstAttribute="trailing" secondItem="cCX-Fh-v9U" secondAttribute="trailing" id="W2Z-jW-hWg"/>
-                                    <constraint firstItem="IiY-4d-jbh" firstAttribute="leading" secondItem="cCX-Fh-v9U" secondAttribute="leading" id="Y6g-w5-IUj"/>
-                                    <constraint firstAttribute="bottom" secondItem="gUl-nF-bFz" secondAttribute="bottom" constant="32" id="dr3-7N-nuV"/>
-                                    <constraint firstAttribute="trailing" secondItem="gUl-nF-bFz" secondAttribute="trailing" constant="20" id="jKm-Ov-wzu"/>
                                     <constraint firstItem="cCX-Fh-v9U" firstAttribute="top" secondItem="FZn-Oo-GfC" secondAttribute="top" id="jvL-BE-69b"/>
+                                    <constraint firstItem="3F4-Fl-ucY" firstAttribute="top" secondItem="FZn-Oo-GfC" secondAttribute="top" constant="470" id="ngs-5C-go2"/>
+                                    <constraint firstAttribute="bottom" secondItem="3F4-Fl-ucY" secondAttribute="bottom" constant="32" id="o93-6g-tuN"/>
                                     <constraint firstAttribute="bottom" secondItem="cCX-Fh-v9U" secondAttribute="bottom" id="pCq-WE-92i"/>
                                 </constraints>
                             </view>
