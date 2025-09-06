@@ -26,12 +26,17 @@ class ViewController: UIViewController {
         keyTextArea.attributedPlaceholder = NSAttributedString(string: "Senha", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         
         eyeButton = UIButton(type: .custom)
-        eyeButton.setImage(UIImage(systemName: "eye.slash.fill"), for: .normal)
-        eyeButton.setImage(UIImage(systemName: "eye.fill"), for: .selected)
+        eyeButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        eyeButton.setImage(UIImage(systemName: "eye"), for: .selected)
         eyeButton.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
         keyTextArea.rightView = eyeButton
         keyTextArea.rightViewMode = .always
         
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 45, height: 30))
+        eyeButton.frame = CGRect(x: -10, y: 0, width: 45, height: 30)
+        containerView.addSubview(eyeButton)
+        keyTextArea.rightView = containerView
+        keyTextArea.rightViewMode = .always
     
     }
     
