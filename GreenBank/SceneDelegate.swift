@@ -16,7 +16,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // 1. Instanciar a UIWindow com a scene correta
+        let window = UIWindow(windowScene: windowScene)
+        
+        // 2. Definir a nossa LoginViewController como a raiz
+        // Envolvemos em uma NavigationController caso queiramos navegar depois
+        let loginVC = LoginViewController()
+        let navVC = UINavigationController(rootViewController: loginVC)
+        navVC.isNavigationBarHidden = true // Esconder a barra de navegação na tela de login
+        
+        window.rootViewController = navVC
+        
+        // 3. Tornar a janela visível
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
