@@ -47,5 +47,3 @@ O projeto foi estruturado seguindo os padrões mais modernos de desenvolvimento 
 * **Persistência:** SwiftData para armazenamento local de contatos frequentes e cache de transações.
 * **Segurança:** Lógica de Privacy Mode (mascaramento de dados sensíveis) e prontidão para Biometria.
 
----
-Desenvolvido com 💚 para fins de portfólio em Engenharia de Software iOS.
